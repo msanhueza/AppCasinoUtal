@@ -14,7 +14,7 @@ Funcionalidades:
   - Ver menús para un día determinado (básico, hipocálorico, vegetariano y ejecutivo) y sus distintos componentes (entradas, platos de fondo, acompañamientos, ensaladas, postres).
   - Encuesta diaria que registra opiniones de atención de personal, presentación de menús e higiene.
   
-  - Valorar y Comentar diferentes componentes de un mes.
+  - Valorar y Comentar diferentes componentes de un menú.
   
   - Estadísticas valoración / comentarios (lo mejor del día, top five del mes, top five por periodo de fechas, resumen del mes y de encuesta (resumen del mes).
 

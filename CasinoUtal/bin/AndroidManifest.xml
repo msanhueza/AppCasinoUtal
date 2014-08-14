@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    package="com.example.casinoutal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-sdk
+    
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+        <application    
+	        android:allowBackup="true"
+	        android:icon="@drawable/ic_launcher"
+	        android:label="@string/app_name"
+	        android:theme="@style/AppTheme" >
+	        
+	  <!-- ACTIVIDAD PRINCIPAL -->
+	        <activity
+	            android:name="com.example.casinoutal.componentes.SplashScreen"
+	            android:screenOrientation="portrait" >
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	        </activity>
+	        
+       <!-- COMPONENTES -->        
+	        <activity android:name="com.example.casinoutal.componentes.Encuesta"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+       <!-- AUTENTICACION -->
+	  	    <activity android:name="com.example.casinoutal.autenticacion.CambiarContrasena"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.autenticacion.HomeUser"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.autenticacion.HomeAdmin"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.autenticacion.Autenticacion"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.autenticacion.RegistrarUsuario"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+       <!-- CREAR MENU -->
+	        <activity android:name="com.example.casinoutal.crear_menu.SelectorCrearMenu"
+	                  android:screenOrientation="portrait"
+	                  >
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.crear_menu.Entrada"
+	                  android:screenOrientation="portrait"
+	            	  android:icon="@drawable/entrada"
+	            	  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.crear_menu.PlatoFondo"
+	                  android:screenOrientation="portrait"
+	            	  android:icon="@drawable/platofondo"
+	            	  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.crear_menu.Acompanamiento"
+	                  android:screenOrientation="portrait"
+	                  android:icon="@drawable/acompanamiento"
+	                  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.crear_menu.Ensalada"
+	                  android:screenOrientation="portrait"
+					  android:icon="@drawable/ensalada"
+					  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.crear_menu.Postre"
+	                  android:screenOrientation="portrait"
+	                  android:icon="@drawable/postre"
+	                  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+       <!-- VER MENU -->
+	        <activity android:name="com.example.casinoutal.ver_menu.SelectorVerMenu"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.ver_menu.VerMenu"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.ver_menu.Detalle"
+	                  android:screenOrientation="portrait">
+	        </activity>  
+	        
+        <!-- ESTADISTICAS -->
+	        <activity android:name="com.example.casinoutal.estadisticas.MenuEstadisticas"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.ListaComentarios"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.VerEstadisticasLista"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.SelectorMesTopFive"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.SelectorFechasTopFive"
+	                  android:screenOrientation="portrait">
+	        </activity>
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.SelectorMesEncuesta"
+	                  android:screenOrientation="portrait"
+	                  android:windowSoftInputMode="stateHidden">
+	        </activity>
+	        
+	        
+	        <activity android:name="com.example.casinoutal.estadisticas.VerListaEstadisticaEncuesta"
+	                  android:screenOrientation="portrait">
+	        </activity>
+         
+    </application>
+
+</manifest>

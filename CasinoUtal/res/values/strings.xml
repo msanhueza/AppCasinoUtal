@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CasinoUtal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_basico">Básico</string>
+    <string name="menu_hipocalorico">Hipocalórico</string>
+    <string name="menu_ejecutivo">Ejecutivo</string>
+    <string name="menu_vegetariano">Vegetariano</string>
+    <string name="hint_entrada">Entrada</string>
+    <string name="hint_plato_fondo">Plato de Fondo</string>
+    <string name="hint_acompanamiento">Acompañamiento</string>
+    <string name="hint_ensalada">Ensalada</string>
+    <string name="db_interna">casino_utal</string>
+    <string name="hint_postre">Postre</string>
+    <string name="etapa_et">PASO 1 de 5</string>
+    <string name="etapa_pf">PASO 2 de 5</string>
+    <string name="etapa_ac">PASO 3 de 5</string>
+    <string name="etapa_en">PASO 4 de 5</string>
+    <string name="etapa_po">PASO 5 de 5</string>
+    <string name="sel_alternativas">Escriba sus alternativas</string>
+    <!-- <string name="ip">192.168.1.110:8080</string>  --> 
+    <!-- <string name="ip">200.83.139.127:80</string> -->
+    <!-- <string name="ip">172.17.33.244:80/~dlopez</string> -->
+    <!-- <string name="ip">192.168.1.107:80</string> -->
+    <string name="ip">192.168.1.110:8080</string>
+     
+
+    <string-array name="usuario">
+        <item>Cambiar Contraseña</item>
+        <item>Cerrar Sesión</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion-->
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_new</item>
+        <item>@drawable/ic_action_copy</item>
+        <item>@drawable/ic_action_data_usage</item>
+        <item>@drawable/ic_action_about</item>
+        <item>@drawable/ic_action_person</item>     
+    </array>
+    <!-- Lista de iconos de componentes menu-->
+    <array name="componentes_iconos">
+        <item>@drawable/entrada</item>
+        <item>@drawable/platofondo</item>
+        <item>@drawable/acompanamiento</item>
+        <item>@drawable/ensalada</item>
+        <item>@drawable/postre</item>     
+    </array>
+    <string name="ver_menu_basico">Básico</string>
+    <string name="ver_menu_hipocalorico">Hipocalórico</string>
+    <string name="ver_menu_vegetariano">Vegetariano</string>
+    <string name="ver_menu_ejecutivo">Ejecutivo</string>
+    <string name="text_selectRating">Califique cada pregunta de 1 a 5</string>
+    <string name="text_encuestaAtencion">Encuesta de Atención y Calidad del Servicio</string>
+    <string name="question_1">¿Atención del personal?</string>
+    <string name="question_2">¿Presentación del menú?</string>
+    <string name="question_3">¿Higiene?</string>
+    <string name="enviar">Enviar</string>
+    <string name="enter_comment">Ingrese un comentario</string>
+    <string name="text_comment">Comentario</string>
+
+</resources>

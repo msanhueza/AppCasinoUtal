@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.casinoutalv1.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+             />       
+    </RelativeLayout>
+	    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+                
+	    <Button
+	        android:id="@+id/btn_crear_menu"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/ic_action_new"
+	        android:text="Crear Menú"
+	        style="@style/CustomStyleButton"
+	         />
+	    
+	    <Button
+	        android:id="@+id/btn_ver_menu"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/menu"
+	        android:text="Ver Menú"
+	        style="@style/CustomStyleButton"
+	         />
+	
+	    <Button
+		     android:id="@+id/btn_estadisticas"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/stats"
+		     android:text="Estadísticas"
+		     style="@style/CustomStyleButton"
+	     />
+	    
+	    <Button
+		     android:id="@+id/btn_cambiar_contrasena"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/config"
+		     android:text="Cambiar Contraseña"
+		     style="@style/CustomStyleButton"
+	     />
+	   
+	    <Button
+		     android:id="@+id/btn_cerrar_sesion"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/salir"
+		     android:text="Cerrar Sesión"
+		     style="@style/CustomStyleButton"
+	     />
+    </LinearLayout>
+</LinearLayout>

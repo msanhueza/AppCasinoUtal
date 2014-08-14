@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.casinoutal.MainActivity$PlaceholderFragment">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:background="#848484"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/textview_seleccionar_fecha_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Seleccione fecha y tipo de menú"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+         />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:orientation="vertical">
+	    <DatePicker
+	        android:id="@+id/selector_fecha_ver_user"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:calendarViewShown="false"/>
+	
+	    <Button
+	        android:id="@+id/btnBasicoVer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ver_menu_basico"
+	        style="@style/CustomStyleButton"
+	        android:onClick="onClickVerMenu"  
+	        />
+	
+	    <Button
+	        android:id="@+id/btnHipocaloricoVer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ver_menu_hipocalorico"
+	        style="@style/CustomStyleButton"
+	        android:onClick="onClickVerMenu"
+	         />
+	
+	    <Button
+	        android:id="@+id/btnVegetarianoVer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/CustomStyleButton"
+	        android:text="@string/ver_menu_vegetariano"
+	        android:onClick="onClickVerMenu"
+	        />
+	    <Button
+	        android:id="@+id/btnEjecutivoVer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/CustomStyleButton"
+	        android:text="@string/ver_menu_ejecutivo"
+	        android:onClick="onClickVerMenu"
+	        />
+	</LinearLayout>
+</LinearLayout>

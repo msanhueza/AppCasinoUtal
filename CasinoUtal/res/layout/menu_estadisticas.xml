@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.casinoutalv1.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:gravity="left" >
+
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALORACIÓN Y COMENTARIOS"
+            android:textColor="#FFFFFF"
+             />       
+    </RelativeLayout>
+	    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+                
+	    <Button
+	        android:id="@+id/btn_mejor_dia"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/best"
+	        android:text="LO MEJOR DEL DÍA"
+	        style="@style/CustomStyleButton"
+	         />
+	    
+	    <Button
+	        android:id="@+id/btn_five_mes"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/five"
+	        android:text="TOP 5 MES"
+	        style="@style/CustomStyleButton"
+	         />
+	
+	    <Button
+		     android:id="@+id/btn_five_periodo"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/five"
+		     android:text="TOP 5 POR PERIODO"
+		     style="@style/CustomStyleButton"
+	     />
+	    
+	    <Button
+	        android:id="@+id/btn_resumen_mes"
+	        style="@style/CustomStyleButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/month"
+	        android:text="RESUMEN DEL MES" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:gravity="left" >
+
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENCUESTA"
+            android:textColor="#FFFFFF"
+             />       
+    </RelativeLayout> 
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+                
+	    <Button
+	        android:id="@+id/btn_resumen_mes_encuesta"
+	        style="@style/CustomStyleButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/month"
+	        android:text="RESUMEN DEL MES" />
+	    
+    </LinearLayout>    
+</LinearLayout>

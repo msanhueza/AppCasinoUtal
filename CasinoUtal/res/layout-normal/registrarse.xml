@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="3dp"
+       android:paddingBottom="3dp"
+       android:paddingRight="3dp"
+       android:paddingLeft="3dp"
+       android:background="#848484"
+       android:orientation="horizontal" >
+       
+       <TextView
+           android:id="@+id/info_menu"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="(*) Campos Obligatorios"
+           android:textStyle="italic"
+           android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >  
+	      
+	    
+    <EditText
+        android:id="@+id/rg_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre(*)"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/rg_apellidos"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos(*)"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/rg_email"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo electrónico(*)"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/rg_contrasena1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña(*)"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rg_contrasena2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmar Contraseña(*)"
+        android:inputType="textPassword" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >    
+    
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/CustomStyleButton"
+        android:onClick="onClickRegistrar"
+        android:text="Registrarse" />      
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

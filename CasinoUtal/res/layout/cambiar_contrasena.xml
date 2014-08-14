@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="3dp"
+       android:paddingBottom="3dp"
+       android:paddingRight="3dp"
+       android:paddingLeft="3dp"
+       android:background="#848484"
+       android:orientation="horizontal" >
+       
+       <TextView
+           android:id="@+id/info_menu"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="(*) Campos Obligatorios"
+           android:textStyle="italic"
+           android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >  
+	      
+    <EditText
+        android:id="@+id/cb_old_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:hint="Actual contraseña(*)"
+        android:inputType="textPassword" 
+        />
+     <EditText
+        android:id="@+id/cb_new_contrasena1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="15dp"
+        android:textSize="16dp"
+        android:hint="Nueva contraseña(*)"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/cb_new_contrasena2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:hint="Confirmar nueva contraseña(*)"
+        android:inputType="textPassword" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >    
+    
+    <Button
+        android:id="@+id/btn_cambiarContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/CustomStyleButton"
+        android:onClick="onClickCambiarContrasena"
+        android:text="Cambiar Contraseña" />      
+    </LinearLayout>    
+    
+    </LinearLayout>
+    
+</LinearLayout>

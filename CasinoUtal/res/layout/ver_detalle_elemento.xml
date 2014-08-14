@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="20dp"
+ 	android:paddingRight="20dp"
+ 	android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+	    
+        <LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+    		android:gravity="center_vertical|center_horizontal"
+    		android:paddingBottom="5dp"
+    		android:background="@drawable/promedio_valoracion"
+    		android:orientation="vertical" >
+    		
+    		<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+	    		android:gravity="center_vertical|center_horizontal"
+	    		android:background="#b9b9b9"
+	    		android:orientation="vertical" >
+		    	<TextView 
+			        android:id="@+id/promedio"
+	    	        android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	            	android:textColor="#FFFFFF"
+	            	android:text="Promedio"/>
+	    	</LinearLayout>
+	    	<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	    		android:gravity="center_vertical|center_horizontal"
+	    		android:paddingRight="5dp"
+	    		android:paddingLeft="5dp"
+	    		android:paddingBottom="5dp"
+	    		android:orientation="vertical" >
+		    	<TextView 
+			        android:id="@+id/nota_entrada"
+	    	        android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	            	android:textSize="35sp"
+	            	android:text=""/>
+		    	<RatingBar android:id="@+id/ratingbar"
+	            	android:layout_height="wrap_content"
+			    	android:layout_width="wrap_content"
+			    	android:numStars="5"
+			    	android:rating="0"
+			    	android:isIndicator="true"
+			    	style="?android:attr/ratingBarStyleSmall"
+	            	/>
+		    	</LinearLayout>
+     	</LinearLayout>
+     	<LinearLayout  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+    		android:gravity="center_vertical|center_horizontal"
+    		android:paddingLeft="10dp"
+    		android:orientation="horizontal" >
+     	    <WebView android:id="@+id/char_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"/>
+     	</LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_valorar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomStyleButton"
+        android:onClick="clickValorar"
+        android:text="Valorar" />
+    
+    <ListView android:id="@+id/listview_comentarios"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scrollbars="vertical"
+	        android:paddingTop="10dp" >    
+        
+    </ListView>
+</LinearLayout>

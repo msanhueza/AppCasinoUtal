@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.casinoutalv1.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/bienvenida_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU BASICO"
+            android:textColor="#FFFFFF"
+             />       
+    </RelativeLayout>
+	    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        
+	    <Button
+	        android:id="@+id/btn_ver_menu_user"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/menu"
+	        android:text="Ver Menú"
+	        style="@style/CustomStyleButton"
+	     />
+	    
+	   	<Button
+	        android:id="@+id/btn_encuesta"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/encuesta"
+	        android:text="Encuesta"
+	        style="@style/CustomStyleButton"
+	     />
+	    
+	    <Button
+		     android:id="@+id/btn_estadisticas_user"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/stats"
+		     android:text="Estadísticas"
+		     style="@style/CustomStyleButton"
+	     />
+	    
+	    <Button
+		     android:id="@+id/btn_cambiar_contrasena_user"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/config"
+		     android:text="Cambiar contraseña"
+		     style="@style/CustomStyleButton"
+	     />
+	    
+	    <Button
+		     android:id="@+id/btn_cerrar_sesion_user"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:drawableLeft="@drawable/salir"
+		     android:text="Cerrar Sesión"
+		     style="@style/CustomStyleButton"
+	     />
+	</LinearLayout>
+</LinearLayout>
